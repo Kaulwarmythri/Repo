@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+    background: powderblue;
+}
+#heading {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: black;
+}
+@media screen and (max-width: 480px) {
+    #heading {
+        font-size: 1rem;
+    }
+  }
+/*
+400px --> 25rem
+200px --> 12.5rem
+*/
+.outer-circle {
+    background: #385a94;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1.2rem;
+    position: relative;
+    margin: auto;
+    margin-top: 4rem;
+    box-shadow: 0.6rem 0.6rem 0.625rem 0.3125rem #888888;
+}
+.topLeft {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 12.5rem 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkgreen;
+    margin: -12.5rem 0 0 -12.5rem;
+    border-width: 0.18rem;
+    border-style: solid;
+}
+.topRight {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 0 12.5rem 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkred;
+    margin: -12.5rem 0 0 0;
+    border-width: 0.18rem;
+    border-style: solid;
+}
+.bottomLeft {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 0 0 0 12.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: gold;
+    margin: 0 0 0 -12.5rem;
+    border-width: 0.18rem;
+    border-style: solid;
+}
+.bottomRight {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 0 0 12.5rem 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkblue;
+    margin: 0 0 0 0;
+    border-width: 0.18rem;
+    border-style: solid;
+}
+.inner-circle {
+    align-items: center;
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+    background-color: grey;
+    border-width: 0.3125rem;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6.25rem 0 0 -6.25rem;
+
+}
+#title {
+    font-family: 'Original Surfer', cursive;
+    position: absolute;
+    font-size: 30px;
+    margin-left: 2.3rem;
+    margin-top: 4.5rem;
+    color: aliceblue;
+}
+
+#onBtn {
+    display: inline-block;
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 1.9rem;
+}
+#startBtn {
+    display: inline-block;
+    position: absolute;
+    margin-left: 5.6rem;
+    margin-top: 1.8rem;
+    border: none;
+    border-radius: 1rem;
+    color: #330000;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#44beeb;
+    font-family: 'Original Surfer', cursive;
+
+}
+
+.clicked {
+    background-color: #385a94;
+    opacity: 0.4;
+}
+
+#onText {
+    position: absolute;
+    margin-left: 2.6rem;
+    margin-top: 2.6rem;
+    font-family: 'Original Surfer', cursive;
+    color: black;
+}
+#levelNo {
+    position: absolute;
+    margin-left: 4.4rem;
+    margin-top: 8rem;
+    background: #330000;
+    height: 30px;
+    width: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    vertical-align: middle;
+    color: lightgreen;
+    text-align: center;
+}
+#levelText {
+    position: absolute;
+    margin-left: 4.5rem;
+    margin-top: 9.8rem;
+    font-family: 'Original Surfer', cursive;
+    color: black;
+
+}
